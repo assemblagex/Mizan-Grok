@@ -1,0 +1,37 @@
+{
+  "name": "mizan-jarvis-api",
+  "version": "2.0.0",
+  "description": "Mizan JARVIS - AI Assistant powered by Claude API with conversation storage",
+  "main": "grok-server-with-db.js",
+  "scripts": {
+    "start": "node grok-server-with-db.js",
+    "dev": "nodemon grok-server-with-db.js",
+    "test": "node test-api.js",
+    "simple": "node grok-api-server.js"
+  },
+  "keywords": [
+    "mizan",
+    "jarvis",
+    "claude",
+    "chatbot",
+    "api",
+    "arabic",
+    "business-intelligence",
+    "ai-assistant"
+  ],
+  "author": "Hamza",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

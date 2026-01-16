@@ -12,10 +12,23 @@ build/
 venv/
 env/
 
-# Database
+# Node.js
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# Environment - CRITICAL: NEVER COMMIT!
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Database & Data
 *.db
 *.sqlite
 *.sqlite3
+*.db-journal
+data/
 
 # IDE
 .vscode/
