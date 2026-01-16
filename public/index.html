@@ -332,7 +332,10 @@
 
     <script>
         // Configuration
-        const API_URL = 'http://localhost:3000/api';
+        // Auto-detect API URL (works for both local and Netlify)
+        const API_URL = window.location.hostname === 'localhost'
+            ? 'http://localhost:3000/api'
+            : '/.netlify/functions';
         const SESSION_ID = 'muawiya-' + Date.now();
 
         // Check API health on load
